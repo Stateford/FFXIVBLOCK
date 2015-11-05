@@ -28,13 +28,12 @@ ffxiv = {
 }
 
 def main():
-    
-    msg = raw_input('ENGLISH TO FFXIVBLOCK: ')
-    final = ''
-    
-    for char in msg:
-        final.append(ffxiv[char.lower()])
-        print final
-        
-if __name__ == "__main__":
-    main()
+
+     msg = input('ENGLISH TO FFXIVBLOCK: ')
+     final = []
+
+     for char in msg:
+         final.append(ffxiv.get(char.lower(), char.lower()))
+     print("".join(final))
+
+main()
