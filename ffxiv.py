@@ -1,3 +1,6 @@
+"""
+Replace unicodeblocks with code numbers.
+"""
 ffxiv_block = {
     'a': '',
     'b': '',
