@@ -1,7 +1,4 @@
-"""
-Replace unicodeblocks with code numbers.
-"""
-ffxiv_block = {
+ffxiv = {
     'a': '',
     'b': '',
     'c': '',
@@ -33,9 +30,10 @@ ffxiv_block = {
 def main():
     
     msg = raw_input('ENGLISH TO FFXIVBLOCK: ')
+    final = ''
     
     for char in msg:
-        print ffxiv_block[char.lower()]
+        final + ffxiv[char.lower()]
         
 if __name__ == "__main__":
     main()
