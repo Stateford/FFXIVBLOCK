@@ -33,7 +33,8 @@ def main():
     final = ''
     
     for char in msg:
-        final + ffxiv[char.lower()]
+        final.append(ffxiv[char.lower()])
+        print final
         
 if __name__ == "__main__":
     main()
