@@ -56,7 +56,6 @@ var ffxiv = {
 
 
 var final = '';
-var getinput2 = $('#translator').val();
 
 
 
